@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.shape.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ui.MainController">
+   <children>
+      <Separator layoutY="133.0" prefWidth="600.0" />
+      <Text layoutX="37.0" layoutY="44.0" strokeType="OUTSIDE" strokeWidth="0.0" text="姓名" />
+      <Text layoutX="228.0" layoutY="79.0" strokeType="OUTSIDE" strokeWidth="0.0" text="出生日期" />
+      <Text layoutX="228.0" layoutY="44.0" strokeType="OUTSIDE" strokeWidth="0.0" text="员工号" />
+      <Text layoutX="37.0" layoutY="79.0" strokeType="OUTSIDE" strokeWidth="0.0" text="性别" />
+      <Text layoutX="228.0" layoutY="116.0" strokeType="OUTSIDE" strokeWidth="0.0" text="住址" />
+      <Label fx:id="name_l" layoutX="101.0" layoutY="32.0" prefHeight="15.0" prefWidth="84.0" />
+      <Label fx:id="sex_l" layoutX="101.0" layoutY="67.0" prefHeight="15.0" prefWidth="36.0" />
+      <Label fx:id="phone_l" layoutX="101.0" layoutY="104.0" prefHeight="15.0" prefWidth="104.0" />
+      <Label fx:id="id_l" layoutX="300.0" layoutY="32.0" prefHeight="15.0" prefWidth="97.0" />
+      <Label fx:id="age_l" layoutX="300.0" layoutY="67.0" prefHeight="15.0" prefWidth="113.0" />
+      <Label fx:id="address_l" layoutX="300.0" layoutY="106.0" prefHeight="15.0" prefWidth="196.0" />
+      <Button fx:id="outButton" layoutX="508.0" layoutY="36.0" mnemonicParsing="false" onAction="#get_out" prefHeight="77.0" prefWidth="70.0" text="退出" />
+      <Text layoutX="37.0" layoutY="116.0" strokeType="OUTSIDE" strokeWidth="0.0" text="联系方式" />
+      <Text layoutX="35.0" layoutY="192.0" strokeType="OUTSIDE" strokeWidth="0.0" text="您是：时薪员工">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Text>
+      <Text layoutX="37.0" layoutY="246.0" strokeType="OUTSIDE" strokeWidth="0.0" text="工作时长：">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <Text layoutX="37.0" layoutY="292.0" strokeType="OUTSIDE" strokeWidth="0.0" text="时薪价格：">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <Label fx:id="time_l" layoutX="128.0" layoutY="233.0" />
+      <Label fx:id="unit_l" layoutX="128.0" layoutY="279.0" />
+      <Text layoutX="205.0" layoutY="245.0" strokeType="OUTSIDE" strokeWidth="0.0" text="小时" />
+      <Text layoutX="205.0" layoutY="291.0" strokeType="OUTSIDE" strokeWidth="0.0" text="元/小时" />
+      <Ellipse fill="#d07281" layoutX="457.0" layoutY="250.0" radiusX="100.0" radiusY="80.0" stroke="BLACK" strokeType="INSIDE" />
+      <Text layoutX="417.0" layoutY="218.0" strokeType="OUTSIDE" strokeWidth="0.0" text="应发工资">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Text>
+      <Label fx:id="salary_l" layoutX="430.0" layoutY="270.0" prefHeight="19.0" prefWidth="36.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Text layoutX="466.0" layoutY="285.0" strokeType="OUTSIDE" strokeWidth="0.0" text="元">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <Button layoutX="273.0" layoutY="354.0" mnemonicParsing="false" onAction="#take_money" text="领取工资" />
+   </children>
+</AnchorPane>
